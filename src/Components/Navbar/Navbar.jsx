@@ -2,8 +2,10 @@ import { MdLogout, MdSpaceDashboard } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import userImg from "/user.png";
 // import { useContext, useEffect, useState } from "react";
-// import { AuthContext } from "../../../AuthProviders/AuthProviders";
+
 import logo from "/logo.png"
+import { AuthContext } from "../AuthProviders/AuthProviders";
+import { useContext } from "react";
 
 
 
@@ -16,13 +18,7 @@ const Navbar = () => {
 
   
 
-    // const { user, logOut } = useContext(AuthContext)
-
-    const user = true;
-
-    const handleLogout = ()=>{
-      console.log('logout')
-    }
+    const { user, logOut } = useContext(AuthContext)
 
 
 
@@ -48,9 +44,9 @@ const Navbar = () => {
     </>
 
 
-    // const handleLogout = () => {
-    //     logOut();
-    // }
+    const handleLogout = () => {
+        logOut();
+    }
 
     return (
 

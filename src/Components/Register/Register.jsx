@@ -1,15 +1,15 @@
-import { useEffect, useContext } from 'react';
+import { useContext } from 'react';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import Swal from 'sweetalert2';
-import { AuthContext } from '../../AuthProviders/AuthProviders';
 import { useForm } from 'react-hook-form';
-import useAxiosPublic from '../../Hooks/AxiosPublic/useAxiosPublic';
 import axios from 'axios';
+import { AuthContext } from '../AuthProviders/AuthProviders';
+import useAxiosPublic from '../Hooks/AxiosPublic';
 import { updateProfile } from 'firebase/auth';
 
 const image_hosting_key = import.meta.env.VITE_IMAGE_HOSTING_KEY;
-const image_hosting_api = `https://api.imgbb.com/1/upload?key=${image_hosting_key}`;
+const image_hosting_api =`https://api.imgbb.com/1/upload?key=${image_hosting_key}`;
 
 const Register = () => {
     const {
@@ -53,20 +53,17 @@ const Register = () => {
                         photoURL: photoUrl,
                     })
                         .then(() => {
-                            let membership = 'bronze';
-                            let userRole = 'member';
+
                             const userName = name;
                             const userMail = email;
-                            const userPhoto = photoUrl; // Use the updated photoUrl
+                            const userPhoto = photoUrl;
                             const userJoined = loggedUser.metadata.creationTime;
     
                             const userInfo = {
                                 userName,
                                 userMail,
                                 userPhoto,
-                                userJoined,
-                                membership,
-                                userRole,
+                                userJoined
                             };
                             axiosPublic.post('/users', userInfo)
                                 .then(res => {
