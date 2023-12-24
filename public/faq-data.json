@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "question": "What is project management, and why is it essential?",
+      "answer": "Project management is a systematic approach to planning, executing, and completing projects efficiently. It ensures that projects meet their goals within scope, on time, and within budget. It's essential for effective resource utilization and successful project delivery."
+    },
+    {
+      "id": 2,
+      "question": "How does project management differ from task management?",
+      "answer": "While task management focuses on individual tasks and their completion, project management encompasses the entire project lifecycle. It involves planning, organizing, and controlling resources and tasks to achieve specific project goals."
+    },
+    {
+      "id": 3,
+      "question": "What are the key benefits of using project management software?",
+      "answer": "Project management software streamlines communication, facilitates collaboration, tracks progress, manages resources, and enhances overall project visibility. It helps teams stay organized and ensures projects are completed successfully."
+    },
+    {
+      "id": 4,
+      "question": "How can project management tools improve team collaboration?",
+      "answer": "Project management tools offer centralized communication channels, real-time collaboration features, and document sharing. This fosters efficient teamwork, enhances communication, and ensures everyone is on the same page throughout the project."
+    },
+    {
+      "id": 5,
+      "question": "What is Agile project management, and when should it be used?",
+      "answer": "Agile project management is an iterative and flexible approach to project management. It's suitable for projects with changing requirements and allows teams to adapt to evolving needs, making it ideal for software development, marketing, and creative projects."
+    },
+    {
+      "id": 6,
+      "question": "How can project managers handle scope changes effectively?",
+      "answer": "Project managers should document and assess the impact of scope changes, including potential delays and cost implications. Clear communication with stakeholders is crucial, and a change control process should be in place to evaluate and approve modifications."
+    },
+    {
+      "id": 7,
+      "question": "What role does risk management play in project management?",
+      "answer": "Risk management involves identifying, assessing, and mitigating potential risks that could impact project success. It helps project managers proactively address challenges, reduce uncertainties, and ensure projects stay on track."
+    }
+  ]
+  
