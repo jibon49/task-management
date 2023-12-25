@@ -22,8 +22,9 @@ const CreateTask = () => {
         const form = e.target;
 
         const title = form.title.value;
-        const tag = form.tag.value;
+        const priority = form.tag.value;
         const description = form.description.value;
+        let status = 'todo'
         const time = dateFormat(new Date());
 
         const author = {
@@ -33,7 +34,7 @@ const CreateTask = () => {
         }
 
 
-        const createTask = { postId, title, tag, description, time, author }
+        const createTask = { postId, title, priority, description, time, author, status }
 
 
         console.log(createTask);

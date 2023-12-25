@@ -21,6 +21,8 @@ import PrivateRoute from './Components/PrivateRoute/PrivateRoute.jsx';
 import CreateTask from './Components/CreateTask/CreateTask.jsx';
 import MyTask from './Components/MyTask/MyTask';
 const queryClient = new QueryClient()
+import { DndProvider } from 'react-dnd'
+import { HTML5Backend } from 'react-dnd-html5-backend'
 
 const router = createBrowserRouter([
   {
@@ -66,7 +68,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <QueryClientProvider client={queryClient}>
       <AuthProviders>
         <div className=''>
-          <RouterProvider router={router} />
+        <DndProvider backend={HTML5Backend}>
+        <RouterProvider router={router} />
+          </DndProvider>
         </div>
       </AuthProviders>
     </QueryClientProvider>
