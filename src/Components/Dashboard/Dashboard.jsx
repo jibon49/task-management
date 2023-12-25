@@ -42,8 +42,8 @@ const Dashboard = () => {
                                         </NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to='ad-task'>
-                                            <FaPen></FaPen> Ad task
+                                        <NavLink to='create-task'>
+                                            <FaPen></FaPen> Create task
                                         </NavLink>
                                     </li>
                                     <li>
